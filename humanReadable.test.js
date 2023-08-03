@@ -8,4 +8,8 @@ describe("humanReadable", () => {
   test("it returns the time when less than 3600 seconds are entered", () => {
     expect(humanReadable(3599)).toEqual("00:59:59");
   });
+
+  test("it returns the time when more than 3600 seconds are entered", () => {
+    expect(humanReadable(3610)).toEqual("01:00:10");
+  });
 });
