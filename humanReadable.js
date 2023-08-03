@@ -1,5 +1,5 @@
 function humanReadable(seconds) {
-  return "00:00:30";
+  return `00:00:${seconds}`;
 }
 
 module.exports = humanReadable;
